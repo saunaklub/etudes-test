@@ -19,4 +19,4 @@ target_include_directories(${TEST}
     PUBLIC ${GTEST_INCLUDE_DIRS}
     )
 
-add_test(AllTestsInFoo foo)
+add_test(AllTestsInFoo ${TEST})
