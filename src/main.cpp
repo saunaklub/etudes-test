@@ -1,5 +1,11 @@
+#include <iostream>
+#include <gtest/gtest.h>
 #include <IO/OSCInput.hpp>
 
-int main() {
-    etudes::OSCInput * a;
+TEST(OSCInput, DoesntLeak) {
+    etudes::OSCInput a(6666);
+
+    std::cout << "failed\n";
+
+    ASSERT_EQ(0, 0);
 }

@@ -6,7 +6,8 @@ enable_testing()
 find_package(GTest REQUIRED)
 find_package(etudes REQUIRED)
 
-add_executable(${TEST} src/main.cpp)
+add_executable(${TEST}
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
 
 target_link_libraries(${TEST}
     GTest::GTest
