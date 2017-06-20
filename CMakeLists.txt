@@ -29,7 +29,7 @@ add_subdirectory(${CMAKE_BINARY_DIR}/googletest-src
 set(TEST etudes_test)
 
 add_executable(${TEST}
-    ${CMAKE_CURRENT_LIST_DIR}/src/main.cpp)
+    ${CMAKE_CURRENT_LIST_DIR}/src/Utility/Utility.cpp)
 
 set_property(TARGET ${TEST} PROPERTY CXX_STANDARD 14)
 
@@ -43,4 +43,4 @@ target_include_directories(${TEST}
     PUBLIC ${GTEST_INCLUDE_DIRS}
     )
 
-add_test(THIS_TEST ${TEST})
+add_test(ETUDES_TEST ${TEST})

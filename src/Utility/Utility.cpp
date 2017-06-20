@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <Utility/Utility.hpp>
 
-TEST(OSCInput, DoesntLeak) {
+TEST(Utility, ConvertsToGLMVecs) {
 
     auto vec = std::vector<float>{0.f,0.f};
     auto glm_vec2 = glm::vec2{0.f,0.f};
