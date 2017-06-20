@@ -42,5 +42,3 @@ target_include_directories(${TEST}
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/lib
     PUBLIC ${GTEST_INCLUDE_DIRS}
     )
-
-add_test(ETUDES_TEST ${TEST})
